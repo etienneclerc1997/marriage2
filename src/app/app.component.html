@@ -1,20 +1,140 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <!--<div class="card-gift-backdrop"></div>-->
+  <div id="fullpage">
+    <div class="section">
+      <mat-card class="card_gift-container">
+
+        <div class="card_gift-text-container">
+          <div class="card_gift-availability">DISPONIBLE</div>
+          <div class="card_gift-title">CHAISE AVEC BASE EN BOIS EIFFEL<mat-icon matTooltip="Disponible dans un magasin Structube et en ligne. Cliquer sur 'Contribuer à ce cadeau' pour plus d'information" class="card_gift-icon-info">info_outline</mat-icon></div>
+          <p class="card_gift-description">Construite en polypropylène moulé, la chaise Eiffel offre une assise ergonomique où s’asseoir est un réel plaisir. Les pieds d'hêtre sont maintenus en place par un jeu de barres métalliques noires, ajoutant un aspect visuel dynamique sous le siège. À la salle à manger comme au bureau, cette chaise d’inspiration vintage sera du plus bel effet.</p>
+        </div>
+
+        <div class="card_gift-image-container">
+          <img class="card_gift-image" src="./assets/images/chair-eiffel.png">
+        </div>
+
+        <div class="card_gift-details-container">
+          <div class="card_gift-details">
+            COULEUR
+            <div class="card_gift-details-box">
+              <div class="card_gift-details-color" style="background-color: black;">
+              </div>
+              Noir
+            </div>
+          </div>
+          <div style="margin-left: 18px;" class="card_gift-details">
+            QTÉ
+            <div class="card_gift-details-box" style="padding-left: 18px; padding-right: 18px;">2</div>
+          </div>
+          <div class="card_gift-details-price">39 $<span style="font-size: 18px; font-weight: 500;">/ch</span></div>
+        </div>
+
+        <button color="primary" class="card_gift-button" mat-raised-button>CONTRIBUER À CE CADEAU</button>
+
+      </mat-card>
+    </div>
+    <div class="section">
+      <mat-card class="card_gift-container">
+
+        <div class="card_gift-text-container">
+          <div class="card_gift-availability">DISPONIBLE</div>
+          <div class="card_gift-title">TABLE À CAFÉ ZAK<mat-icon class="card_gift-icon-info" matTooltip="Disponible dans un magasin Structube et en ligne. Cliquer sur 'Contribuer à ce cadeau' pour plus d'information">info_outline</mat-icon></div>
+          <p class="card_gift-description">La table à café Zak n’est définitivement pas sans surprise. Ses lattes de bois de teck recyclé ont été traitées avec des feuilles de thé. Géométrique, elle présente des triangles sur sa surface ainsi que dans son piètement de fer noir, attaché astucieusement sur ses côtés.</p>
+        </div>
+
+        <div class="card_gift-image-container">
+          <img class="card_gift-image" src="./assets/images/coffee-table-zak.png">
+        </div>
+
+        <div class="card_gift-details-container">
+          <div class="card_gift-details">
+            COULEUR
+            <div class="card_gift-details-box">
+              <div class="card_gift-details-color">
+                <img src="./assets/images/color-natural.jpg">
+              </div>
+              Naturel
+            </div>
+          </div>
+          <div style="margin-left: 18px;" class="card_gift-details">
+            QTÉ
+            <div class="card_gift-details-box" style="padding-left: 18px; padding-right: 18px;">1</div>
+          </div>
+          <div class="card_gift-details-price">129 $</div>
+        </div>
+
+        <button color="primary" class="card_gift-button" mat-raised-button (click)="openDialog(762378432)">CONTRIBUER À CE CADEAU</button>
+
+      </mat-card>
+    </div>
+    <div class="section">
+      <mat-card class="card_gift-container">
+
+        <div class="card_gift-text-container">
+          <div class="card_gift-availability"><mat-icon style="vertical-align: bottom; margin-right: 8px;">error_outline</mat-icon>CE CADEAU EST DÉJÀ ACHETÉ</div>
+          <div class="card_gift-title">TABLE D'APPOINT ZAK<mat-icon class="card_gift-icon-info" matTooltip="Disponible dans un magasin Structube et en ligne. Cliquer sur 'Contribuer à ce cadeau' pour plus d'information">info_outline</mat-icon></div>
+          <p class="card_gift-description">La table d’appoint Zak vous offre des lattes de bois, traitées avec des feuilles de thé. Le piètement de fer noir architectural de cette table, attaché ingénieusement sur ses côtés, ajoute à son look industriel audacieux. Ses lignes géométriques uniques ajouteront sans aucun doute beaucoup de personalité à votre espace.</p>
+        </div>
+
+        <div class="card_gift-image-container">
+          <img class="card_gift-image" src="./assets/images/end-table-zak.png">
+        </div>
+
+        <div class="card_gift-details-container">
+          <div class="card_gift-details">
+            COULEUR
+            <div class="card_gift-details-box">
+              <div class="card_gift-details-color">
+                <img src="./assets/images/color-natural.jpg">
+              </div>
+              Naturel
+            </div>
+          </div>
+          <div style="margin-left: 18px;" class="card_gift-details">
+            QTÉ
+            <div class="card_gift-details-box" style="padding-left: 18px; padding-right: 18px;">1</div>
+          </div>
+          <div class="card_gift-details-price">89 $</div>
+        </div>
+
+        <button color="primary" class="card_gift-button" mat-raised-button disabled="true">CONTRIBUER À CE CADEAU</button>
+
+      </mat-card>
+    </div>
+    <div class="section">
+      <mat-card class="card_gift-container">
+
+        <div class="card_gift-text-container">
+          <div class="card_gift-availability">DISPONIBLE</div>
+          <div class="card_gift-title">BANC ZAK<mat-icon class="card_gift-icon-info" matTooltip="Disponible dans un magasin Structube et en ligne. Cliquer sur 'Contribuer à ce cadeau' pour plus d'information">info_outline</mat-icon></div>
+          <p class="card_gift-description">Zak n’est pas un banc en bois comme les autres. Supportée par des pattes de fer industrielles, sa surface de bois de teck recyclée présente un fini créé avec des feuilles de thé, lui donnant de la personalité à en revendre.</p>
+        </div>
+
+        <div class="card_gift-image-container">
+          <img class="card_gift-image" src="./assets/images/bench-zak.png">
+        </div>
+
+        <div class="card_gift-details-container">
+          <div class="card_gift-details">
+            COULEUR
+            <div class="card_gift-details-box">
+              <div class="card_gift-details-color">
+                <img src="./assets/images/color-natural.jpg">
+              </div>
+              Naturel
+            </div>
+          </div>
+          <div style="margin-left: 18px;" class="card_gift-details">
+            QTÉ
+            <div class="card_gift-details-box" style="padding-left: 18px; padding-right: 18px;">1</div>
+          </div>
+          <div class="card_gift-details-price">139 $</div>
+        </div>
+
+        <button color="primary" class="card_gift-button" mat-raised-button>CONTRIBUER À CE CADEAU</button>
+
+      </mat-card>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
 

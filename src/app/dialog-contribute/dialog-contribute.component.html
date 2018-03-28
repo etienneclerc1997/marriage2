@@ -1,0 +1,17 @@
+<h2 mat-dialog-title>TABLE À CAFÉ ZAK</h2>
+<mat-dialog-content>
+  <span style="color: rgba(0,0,0, 0.4);">
+    Qui contribut à ce cadeau?
+  </span>
+  <form>
+    <mat-form-field style="margin-bottom: 12px; margin-top: 12px;" hintLabel="Maximum 16 caractères">
+      <input matInput #input maxlength="16" placeholder="Entrez votre nom">
+      <mat-hint align="end">{{input.value?.length || 0}}/16</mat-hint>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button mat-dialog-close>Annuler</button>
+  <!-- The mat-dialog-close directive optionally accepts a value as a result for the dialog. -->
+  <button mat-button [mat-dialog-close]="true">Confirmer</button>
+</mat-dialog-actions>
